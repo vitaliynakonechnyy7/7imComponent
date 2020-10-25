@@ -1,0 +1,40 @@
+
+
+.front-card-product .navigation li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.navigation li img {
+  max-height: 100px;
+  margin-right:10px;
+margin-bottom: 10px;
+}
+
+.mat-card {
+  margin-top: 100px;
+}
+
+.front-card-product .navigation {
+  display: flex;
+  justify-content: start;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.front-card-product {
+   position: absolute;
+   width: 100%;
+   display: flex;
+ }
+
+ .front-card-product .navigation li:hover {
+  display: inline-block;
+  transform: translateY(-5px);
+  box-shadow: 2px 40px 40px 4px rgba(black, 0.35);
+}
+
+/*
+
+
+*/

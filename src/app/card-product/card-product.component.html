@@ -1,0 +1,130 @@
+<p>card-product</p>
+
+<!--
+<div fxLayout="row wrap"
+style="background-color: burlywood"
+fxLayoutGap="25px"
+fxLayoutAlign="space-between center" >
+  <div class="test" fxFlex="calc(20% - 25px)"
+  *ngFor="let i of [1, 2, 3, 4,5,6,7,8]">
+    Test 1...
+  </div>
+</div>
+
+<h2>V - 2</h2>
+<div fxLayout="row wrap"
+style="background-color: rgba(138, 222, 135, 0.564)"
+fxLayoutAlign="start center"
+fxLayoutGap="25px grid">
+  <div class="test" fxFlex="20" *ngFor="let i of [1, 2, 3, 4,5,6,7,8]">
+    Test 2...
+  </div>
+</div>  -->
+
+
+<div class="card-product" style="padding: 3%; height: 100%; margin: 10px; ">
+<div
+  fxLayout="row wrap"
+  fxLayout.lt-md="column"
+  fxLayoutGap="12px"
+  fxLayoutAlign="flex-start">
+  <div
+    fxFlex="0 2 calc(55% - 12px)"
+    fxFlex.lt-md="0 1 calc(100% - 12px)">
+    <div class="big-img-product" style="flex-grow: 1; min-width: 450px;">
+      <img class="" style="width: auto; max-height:500px;" src="./assets/images/naushniki-7.jpg" id="slider">
+      </div>
+    <div class="front-card-product">
+      <ul class="navigation">
+        <li onmouseover="imgslider('./assets/images/naushniki-7.jpg')">
+          <img class="" src="./assets/images/naushniki-7.jpg">
+        </li>
+        <li onmouseover="imgslider('./assets/images/naushniki-3.png')">
+          <img class="" src="./assets/images/naushniki-3.png">
+        </li>
+        <li onmouseover="imgslider('./assets/images/naushniki-4.png')">
+          <img class="" src="./assets/images/naushniki-4.png">
+        </li>
+        <li onmouseover="imgslider('./assets/images/naushniki-5.png')">
+          <img class="" src="./assets/images/naushniki-5.png">
+        </li>
+        <li onmouseover="imgslider('./assets/images/naushniki-6.png')">
+          <img class="" src="./assets/images/naushniki-6.png">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <mat-card
+    fxFlex="0 1 calc(45% - 12px)"
+    fxFlex.lt-md="0 1 calc(55% - 12px)"
+    fxFlex.lt-sm="100%">
+  <mat-card-title>
+      Беспроводные наушники Sony WH-1000XM4 - черные
+  </mat-card-title>
+  <mat-card-subtitle>WH1000XM4BCE7</mat-card-subtitle>
+  <mat-card-title>Sony</mat-card-title>
+  <mat-card-content>
+    <h3 style="font-weight: bolder;"> Sony WH-1000XM4 - это умные беспроводные наушники,
+       которые производят высококачественный звук и обладают одной из лучших
+       звукоизоляционных материалов. Наушники поддерживают голосовое управление
+        с помощью Siri, Google и Alexa, мощный аккумулятор с быстрой зарядкой и
+        встроенный микрофон.
+    </h3>
+    <ul>
+      <li>
+          динамик 40 мм
+    </li>
+    <li>
+        Bluetooth, NFC, мини-разъем
+    </li>
+    <li>
+        Активная звукоизоляция
+    </li>
+    <li>
+        До 38 часов автономной работы
+    </li>
+  </ul>
+   </mat-card-content>
+   <mat-card-actions>
+     <button mat-raised-button color="primary" style="width: 60%">Добавить в корзину</button>
+   </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+
+
+<!--<div class="front-card-product">
+  <div>
+  <img class="" style="width: auto; height:500px;" src="./assets/images/naushniki-7.jpg" id="slider">
+  </div>
+  <ul class="navigation">
+    <li onmouseover="imgslider('./assets/images/naushniki-7.jpg')">
+      <img class="" src="./assets/images/naushniki-7.jpg">
+    </li>
+    <li onmouseover="imgslider('./assets/images/naushniki-3.png')">
+      <img class="" src="./assets/images/naushniki-3.png">
+    </li>
+    <li onmouseover="imgslider('./assets/images/naushniki-4.png')">
+      <img class="" src="./assets/images/naushniki-4.png">
+    </li>
+    <li onmouseover="imgslider('./assets/images/naushniki-5.png')">
+      <img class="" src="./assets/images/naushniki-5.png">
+    </li>
+  </ul>
+  <h2>Yours slide</h2>
+</div>
+-->
+
+<!--<div class="front-card-product">
+  <div class="slider-card-product">
+
+  </div>
+
+  <div class="description-product">
+
+  </div>
+</div>
+-->
+

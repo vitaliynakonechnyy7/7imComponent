@@ -1,0 +1,25 @@
+.img-blog-conteiner-bottom .img-twins-conteiner-top {
+  width: 500px;
+}
+
+.front-conteiner {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+div.conteiner{
+  display: flex;
+  justify-content: center;
+}
+
+
+img {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.mat-card {
+  margin-bottom: 15px;
+  justify-content: center;
+}
