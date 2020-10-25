@@ -38,3 +38,8 @@ div .conteiner {
 .conteiner .box:hover .contentBx {
   transform: translateZ(50px) scaleY(1);
 }
+
+img {
+  object-fit: cover;
+  max-height: 388px;
+}
