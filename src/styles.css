@@ -3,3 +3,28 @@ html, body { height: 100%; width: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+.bigImg{
+  max-width: 500px;
+  object-fit: cover;
+}
+
+.gallary img{
+  max-width: 230px;
+  min-width: 229px;
+  max-height: 131px;
+  min-height: 130px;
+  padding: 2px;
+  margin-right: 10px;
+  object-fit: cover;
+  filter: grayscale(80%);
+  transition: 1s;
+}
+
+.gallary{
+  margin: 10px 50px;
+}
+
+.gallary img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}

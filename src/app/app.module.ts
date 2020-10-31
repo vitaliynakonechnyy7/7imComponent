@@ -15,6 +15,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CardProductComponent } from './card-product/card-product.component';
 import { TiltHoverEffect3dComponent } from './tilt-hover-effect3d/tilt-hover-effect3d.component';
+import { ImagesGalleryComponent } from './images-gallery/images-gallery.component';
+import { FilterGalleryComponent } from './filter-gallery/filter-gallery.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { TiltHoverEffect3dComponent } from './tilt-hover-effect3d/tilt-hover-eff
     SliderComponent,
     CardProductComponent,
     TiltHoverEffect3dComponent,
+    ImagesGalleryComponent,
+    FilterGalleryComponent,
   ],
   imports: [
     BrowserModule,

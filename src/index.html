@@ -12,13 +12,37 @@
 <body class="mat-typography">
   <app-root></app-root>
 
+
+
   <script type="text/javascript">
   function imgslider(anyslide) {
 document.getElementById("slider").src = anyslide;
   }</script>
 
-<script src="vanilla-tilt.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.list').click(function(){
+    const value = $(this).attr('data-filter');
+    if (value =='all'){
+     $('.itemBox').show('1000');
+}
+else{
+  $('.itemBox').not('.'+value).hide('1000');
+  $('.itemBox').filter('.'+value).show('1000');
+}
+  })
+  $('.list').click(function () {
+$(this).addClass('active').siblings().removeClass('active');
+  })
+})
+</script>
+
+<!--<script src="vanilla-tilt.min.js"></script>
 
   <script type="text/javascript">
 	VanillaTilt.init(document.querySelectorAll(".box"), {
@@ -26,7 +50,7 @@ document.getElementById("slider").src = anyslide;
 		speed: 400
 	});
 </script>
-<!--<script type="text/javascript">
+<script type="text/javascript">
 	VanillaTilt.init(document.querySelectorAll(".box"), {
 		max: 25,
 		speed: 400
@@ -35,6 +59,8 @@ document.getElementById("slider").src = anyslide;
 	//It also supports NodeList
 	VanillaTilt.init(document.querySelectorAll(".box"));
 </script>-->
+
+
 
 </body>
 
