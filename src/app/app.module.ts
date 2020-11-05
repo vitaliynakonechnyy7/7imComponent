@@ -8,7 +8,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BlogComponent } from './blog/blog.component';
-import { SliderComponent } from './slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -17,6 +16,9 @@ import { CardProductComponent } from './card-product/card-product.component';
 import { TiltHoverEffect3dComponent } from './tilt-hover-effect3d/tilt-hover-effect3d.component';
 import { ImagesGalleryComponent } from './images-gallery/images-gallery.component';
 import { FilterGalleryComponent } from './filter-gallery/filter-gallery.component';
+import { CssSliderComponent } from './css-slider/css-slider.component';
+import { SliderLightComponent } from './slider-light/slider-light.component';
+
 
 
 @NgModule({
@@ -24,11 +26,12 @@ import { FilterGalleryComponent } from './filter-gallery/filter-gallery.componen
     AppComponent,
     ToolbarComponent,
     BlogComponent,
-    SliderComponent,
     CardProductComponent,
     TiltHoverEffect3dComponent,
     ImagesGalleryComponent,
     FilterGalleryComponent,
+    CssSliderComponent,
+    SliderLightComponent
   ],
   imports: [
     BrowserModule,

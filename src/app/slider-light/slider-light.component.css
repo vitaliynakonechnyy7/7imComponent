@@ -1,0 +1,27 @@
+.slider-conteiner-card {
+  display: flex;
+}
+
+.slider-card {
+  max-width: 303.75px;
+  margin-right: 20px;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+}
+
+img {
+  max-height: 280px;
+  max-width: 200px;
+  object-fit: cover;
+  min-height: 279px;
+  margin-left: auto ;
+}
+
+.slider-card:hover {
+  display: inline-block;
+  transform: translateY(-5px);
+  box-shadow: 2px 40px 40px 4px rgba(black, 0.35);
+}

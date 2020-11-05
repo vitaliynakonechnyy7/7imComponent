@@ -1,0 +1,117 @@
+.conteiner-slider {
+  position: relative;
+  /*overflow: hidden;*/
+  widows: 100px;
+  height: 100vh;
+
+}
+
+.conteiner-slider .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  animation: animate 10s linear infinite;
+}
+
+.conteiner-slider .slider .slide {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.conteiner-slider .slider .slide .caption {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+  padding: 30px;
+  background: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+}
+
+.conteiner-slider .slider .slide .caption  h2  {
+  margin: 0 0 20px;
+  padding: 0;
+  color: #fff;
+  font-size: 48px;
+}
+
+.conteiner-slider .slider .slide .caption  p  {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.conteiner-slider .slider .slide.slide1 {
+ background: url(/assets/images/isl-hause.webp);
+ object-fit: cover;
+ background-position: center;
+}
+
+.conteiner-slider .slider .slide.slide2 {
+  background: url(/assets/images/islandia-etiqueta.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+ .conteiner-slider .slider .slide.slide3 {
+  background: url(/assets/images/isl-ice.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+ .conteiner-slider .slider .slide.slide4 {
+  background: url(/assets/images/istock-isl.webp);
+  background-size: cover;
+  background-position: center;
+}
+.conteiner-slider .slider .slide.slide5 {
+  background: url(/assets/images/waterfall.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes animate
+ {
+  0%
+  {
+    left: 0%;
+  }
+  20%
+  {
+    left: 0%;
+  }
+  25%
+  {
+    left: -100%;
+  }
+  45%
+  {
+    left: -100%;
+  }
+  50%
+  {
+    left: -200%;
+  }
+  70%
+  {
+    left: -200%;
+  }
+  75%
+  {
+    left: -300%;
+  }
+  95%
+  {
+    left: -300%;
+  }
+  100%
+  {
+    left: -400%;
+  }
+
+}
