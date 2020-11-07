@@ -1,7 +1,56 @@
 <p>slider-light works!</p>
-<div class="slider-conteiner-card">
 
-<mat-card class="slider-card card1">
+<div>
+  <div class="form-group">
+      <label>Название модели</label>
+      <input class="form-control" name="title" [(ngModel)]="title" />
+  </div>
+  <div class="form-group">
+      <label>Цена</label>
+      <input type="number" class="form-control" name="price" [(ngModel)]="price" />
+  </div>
+  <div class="form-group">
+      <label>Производитель</label>
+      <select class="form-control" name="company" [(ngModel)]="company">
+          <option  *ngFor="let comp of companies" [value]="comp">
+              {{comp}}
+          </option>
+      </select>
+  </div>
+  <div class="form-group">
+      <button class="btn btn-default" (click)="addPhone()">Добавить</button>
+  </div>
+</div>
+<div><h3>Добавленные элементы</h3>
+  <ul *ngFor="let p of phones">
+      <li>{{p.title}} ({{p.company}}) - {{p.price}}</li>
+  </ul>
+</div>
+
+
+<button mat-stroked-button color="primary">Перезагрузить Вселенную?</button>
+
+<p><strong>{{title}}</strong></p>
+<div class="slider-conteiner-card" >
+
+  <mat-card class="slider-card card1" *ngFor="let p of phones">
+    <img mat-card-image src="/assets/images/naushniki-2.webp" alt="">
+    <mat-card-content style="text-align:center">
+        <mat-card-title>
+            {{name-product}} Sony WH-1000XM4
+          </mat-card-title>
+          <mat-card-subtitle>
+             <h3>{{price}}</h3>
+          </mat-card-subtitle>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-stroked-button color="primary" style=" width: 90%; margin:5%;">Подробнее
+        </button>
+      </mat-card-actions>
+  </mat-card>
+
+</div>
+<!-- <mat-card class="slider-card card1">
     <img mat-card-image src="/assets/images/naushniki-2.webp" alt="">
     <mat-card-content style="text-align:center">
         <mat-card-title>
@@ -130,3 +179,4 @@
                 </mat-card>
 
 </div>
+-->

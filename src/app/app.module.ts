@@ -18,6 +18,7 @@ import { ImagesGalleryComponent } from './images-gallery/images-gallery.componen
 import { FilterGalleryComponent } from './filter-gallery/filter-gallery.component';
 import { CssSliderComponent } from './css-slider/css-slider.component';
 import { SliderLightComponent } from './slider-light/slider-light.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -41,7 +42,8 @@ import { SliderLightComponent } from './slider-light/slider-light.component';
     FlexLayoutModule,
     MatGridListModule,
     CarouselModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

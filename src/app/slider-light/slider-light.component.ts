@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider-light.component.css']
 })
 export class SliderLightComponent implements OnInit {
+  title: string;
+  price: number;
+  company: string;
+
+  phones: Phone[] = [];
+  companies: string[] = ["Apple", "Huawei", "Xiaomi", "Samsung", "LG", "Motorola", "Alcatel"];
+
+  addPhone(){
+      this.phones.push(new Phone(this.title, this.price, this.company));
+  }
 
   constructor() { }
+  
 
   ngOnInit(): void {
   }
+
+
 
 }

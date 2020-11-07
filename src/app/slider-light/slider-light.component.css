@@ -1,3 +1,5 @@
+
+
 .slider-conteiner-card {
   display: flex;
 }
@@ -17,7 +19,7 @@ img {
   max-width: 200px;
   object-fit: cover;
   min-height: 279px;
-  margin-left: auto ;
+  margin-left: auto;
 }
 
 .slider-card:hover {
