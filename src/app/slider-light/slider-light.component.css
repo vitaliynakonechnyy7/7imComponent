@@ -4,6 +4,15 @@
   display: flex;
 }
 
+.slider-conteiner-card {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-conteiner-card::-webkit-scrollbar {
+  display: none;
+}
+
 .slider-card {
   max-width: 303.75px;
   margin-right: 20px;
@@ -19,7 +28,8 @@ img {
   max-width: 200px;
   object-fit: cover;
   min-height: 279px;
-  margin-left: auto;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
 .slider-card:hover {

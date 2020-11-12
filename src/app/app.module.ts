@@ -19,6 +19,7 @@ import { FilterGalleryComponent } from './filter-gallery/filter-gallery.componen
 import { CssSliderComponent } from './css-slider/css-slider.component';
 import { SliderLightComponent } from './slider-light/slider-light.component';
 import { FormsModule } from '@angular/forms';
+import { ScrollingConteinerComponent } from './scrolling-conteiner/scrolling-conteiner.component';
 
 
 
@@ -32,7 +33,9 @@ import { FormsModule } from '@angular/forms';
     ImagesGalleryComponent,
     FilterGalleryComponent,
     CssSliderComponent,
-    SliderLightComponent
+    SliderLightComponent,
+    ScrollingConteinerComponent,
+    
   ],
   imports: [
     BrowserModule,
