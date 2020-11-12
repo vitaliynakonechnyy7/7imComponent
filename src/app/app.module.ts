@@ -20,6 +20,7 @@ import { CssSliderComponent } from './css-slider/css-slider.component';
 import { SliderLightComponent } from './slider-light/slider-light.component';
 import { FormsModule } from '@angular/forms';
 import { ScrollingConteinerComponent } from './scrolling-conteiner/scrolling-conteiner.component';
+import { TestComponent } from './test/test.component';
 
 
 
@@ -35,6 +36,7 @@ import { ScrollingConteinerComponent } from './scrolling-conteiner/scrolling-con
     CssSliderComponent,
     SliderLightComponent,
     ScrollingConteinerComponent,
+    TestComponent,
     
   ],
   imports: [
