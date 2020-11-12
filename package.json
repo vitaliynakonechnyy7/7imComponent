@@ -4,12 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-simple": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "git": "git add . && git commit -m 'c' && git push -u origin master",
-    "build-adv": "node --max_old_space_size=16096 node_modules/@angular/cli/bin/ng build main --prod"
+    "build": "node --max_old_space_size=16096 node_modules/@angular/cli/bin/ng build"
   },
   "private": true,
   "dependencies": {
