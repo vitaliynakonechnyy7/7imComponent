@@ -10,15 +10,15 @@ export class SliderLightComponent implements OnInit {
   price: number;
   company: string;
 
-  phones: Phone[] = [];
+  // phones: Phone[] = [];
   companies: string[] = ["Apple", "Huawei", "Xiaomi", "Samsung", "LG", "Motorola", "Alcatel"];
 
   addPhone(){
-      this.phones.push(new Phone(this.title, this.price, this.company));
+      // this.phones.push(new Phone(this.title, this.price, this.company));
   }
 
   constructor() { }
-  
+
 
   ngOnInit(): void {
   }
