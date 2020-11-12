@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider-light.component.css']
 })
 export class SliderLightComponent implements OnInit {
-
-<<<<<<< HEAD
+  title = 'test';
   img = [
    {
      productId : 1,
@@ -53,14 +52,12 @@ export class SliderLightComponent implements OnInit {
   },
 
  ];
-=======
   // phones: Phone[] = [];
-  companies: = ["Apple", "Huawei", "Xiaomi", "Samsung", "LG", "Motorola", "Alcatel"];
+  companies = ["Apple", "Huawei", "Xiaomi", "Samsung", "LG", "Motorola", "Alcatel"];
 
   addPhone(){
       // this.phones.push(new Phone(this.title, this.price, this.company));
   }
->>>>>>> 085a58b6d1148ea1310c2428b31f90c28c497640
 
   constructor() { }
 
