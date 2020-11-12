@@ -56,7 +56,7 @@ export class SliderLightComponent implements OnInit {
   companies = ["Apple", "Huawei", "Xiaomi", "Samsung", "LG", "Motorola", "Alcatel"];
 
   addPhone(){
-      // this.phones.push(new Phone(this.title, this.price, this.company));
+      //  this.phones.push(new Phone(this.title, this.price, this.company));
   }
 
   constructor() { }
