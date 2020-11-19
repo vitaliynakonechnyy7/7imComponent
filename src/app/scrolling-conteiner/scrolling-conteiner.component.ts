@@ -51,7 +51,22 @@ export class ScrollingConteinerComponent implements OnInit {
     },
 
   ];
-constructor() { }
+constructor() {
+  /* (function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        let delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.getElementById('card').scrollLeft -= (delta * 40); // Multiplied by 40
+        e.preventDefault();
+    }
+    if (document.getElementById('card').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('card').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('card').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    }
+  })();*/
+}
 
 ngOnInit(): void {
   }

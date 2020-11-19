@@ -1,10 +1,71 @@
-<div style="text-align:center">
+
+
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+
+
+    <button mat-button color="primary"
+    (click)="backgroundToggle = !backgroundToggle"
+     style="float: right;">Изменить тему</button>
+
+
+   <!-- <mat-form-field appearance="fill">
+      <mat-label>Изменить тему</mat-label>
+      <mat-select>
+         <mat-option *ngFor="let theme of themes" [value]="theme.value">
+          {{theme.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>-->
+
+  </mat-toolbar>
+
+
+
+  <!-- Image text -->
+<div class="caption-container">
+  <p id="caption"></p>
+</div>
+
+<!-- Thumbnail images -->
+<!-- <div class="row">
+  <div class="column">
+    <img class="demo cursor" src="/assets/images/camera1.jpg" onclick="currentSlide(1)" alt="The Woods">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="/assets/images/camera2.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="/assets/images/camera3.webp" onclick="currentSlide(3)" alt="Mountains and fjords">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="/assets/images/boat.webp" onclick="currentSlide(4)" alt="Northern Lights">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="/assets/images/isl-home2.webp" onclick="currentSlide(5)" alt="Nature and sunrise">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="/assets/images/isl-hause.webp" onclick="currentSlide(6)" alt="Snowy Mountains">
+  </div>
+</div>
+</div> -->
+
+
+<div style="text-align:center"
+[class.beazh-theme]= 'backgraundTheme'
+[class.img-theme]= '!backgraundTheme'
+[ngStyle]="{
+  background: backgroundToggle ? ' rgba(58, 57, 57, 0.899)' : ''
+}">
   <h1>
     Welcome to {{ title }}!
-  </h1></div>
+  </h1>
+
   <app-scrolling-conteiner></app-scrolling-conteiner>
   <app-slider-light></app-slider-light>
-
   <app-css-slider></app-css-slider>
   <app-filter-gallery></app-filter-gallery>
   <app-images-gallery></app-images-gallery>
@@ -13,7 +74,7 @@
   <app-blog></app-blog>
 <!--
 -->
-
+</div>
 
 
 <!-- <div class="content" role="main">

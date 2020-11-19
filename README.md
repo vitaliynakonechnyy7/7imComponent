@@ -13,5 +13,6 @@ If there changes could not be push after run command 'npm run git' you should tr
 and in new window with message type:
 
 :wq
+ng g c 'name' --skipTests команда создает компонент без юнит тестов
 
 

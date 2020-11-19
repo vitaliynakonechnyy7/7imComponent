@@ -6,7 +6,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BlogComponent } from './blog/blog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -20,14 +19,15 @@ import { CssSliderComponent } from './css-slider/css-slider.component';
 import { SliderLightComponent } from './slider-light/slider-light.component';
 import { FormsModule } from '@angular/forms';
 import { ScrollingConteinerComponent } from './scrolling-conteiner/scrolling-conteiner.component';
-import { TestComponent } from './test/test.component';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent,
     BlogComponent,
     CardProductComponent,
     TiltHoverEffect3dComponent,
@@ -36,8 +36,7 @@ import { TestComponent } from './test/test.component';
     CssSliderComponent,
     SliderLightComponent,
     ScrollingConteinerComponent,
-    TestComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -48,7 +47,11 @@ import { TestComponent } from './test/test.component';
     MatGridListModule,
     CarouselModule,
     MatTabsModule,
-    FormsModule
+    FormsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
