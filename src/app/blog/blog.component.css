@@ -1,25 +1,33 @@
-.img-blog-conteiner-bottom .img-twins-conteiner-top {
-  width: 500px;
+
+.top-twins-conteiner {
+  max-width: 610px;
+  min-width: 450px;
+  margin-right: 1%;
+}
+.bottom-twins-conteiner {
+  max-width: 610px;
+  min-width: 450px;
+  max-height: 560px;
+  min-height: 450px;
+  margin-right: 1%;
+
 }
 
 .front-conteiner {
-  padding: 5%;
-  display: flex;
-  justify-content: center;
-}
+  padding: 3%;
+  display: grid;
 
-div.conteiner{
-  display: flex;
-  justify-content: center;
+ /*   display: flex;
+  justify-content:  space-around;*/
 }
-
 
 img {
-  max-height: 250px;
+  min-width: 450px;
   object-fit: cover;
+  max-height: 250px;
 }
 
 .mat-card {
-  margin-bottom: 15px;
-  justify-content: center;
+  margin-top: 15px;
+
 }

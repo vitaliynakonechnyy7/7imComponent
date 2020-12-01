@@ -5,7 +5,10 @@
     <mat-card class="card" *ngFor='let slide of img'>
     <img src="{{slide.imageUrl}}">
   </mat-card>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
  </div>
+
 
 
 <!-- <mat-card class="card"><img src="/assets/images/isl-riwer.webp" alt="Bhutan"></mat-card>
