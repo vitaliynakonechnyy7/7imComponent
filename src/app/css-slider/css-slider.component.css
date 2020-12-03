@@ -1,6 +1,6 @@
 .conteiner-slider {
   position: relative;
-  /*overflow: hidden;*/
+  overflow: hidden;
   widows: 100px;
   height: 100vh;
 
@@ -15,14 +15,14 @@
   animation: animate 10s linear infinite;
 }
 
-.conteiner-slider .slider .slide {
+.conteiner-slider .slider .slide  {
   position: relative;
   width: 20%;
   height: 100%;
   float: left;
 }
 
-.conteiner-slider .slider .slide .caption {
+.conteiner-slider .slider .slide  .caption {
   position: absolute;
   bottom: 60px;
   left: 60px;
@@ -46,30 +46,30 @@
   font-size: 18px;
 }
 
-.conteiner-slider .slider .slide.slide1 {
+.conteiner-slider .slider .slide .slide1 {
  background: url(/assets/images/isl-hause.webp);
  object-fit: cover;
  background-position: center;
 }
 
-.conteiner-slider .slider .slide.slide2 {
+.conteiner-slider .slider .slide .slide2 {
   background: url(/assets/images/islandia-etiqueta.webp);
   background-size: cover;
   background-position: center;
 }
 
- .conteiner-slider .slider .slide.slide3 {
+ .conteiner-slider .slider .slide .slide3 {
   background: url(/assets/images/isl-ice.webp);
   background-size: cover;
   background-position: center;
 }
 
- .conteiner-slider .slider .slide.slide4 {
+ .conteiner-slider .slider .slide .slide4 {
   background: url(/assets/images/istock-isl.webp);
   background-size: cover;
   background-position: center;
 }
-.conteiner-slider .slider .slide.slide5 {
+.conteiner-slider .slider .slide .slide5 {
   background: url(/assets/images/waterfall.webp);
   background-size: cover;
   background-position: center;

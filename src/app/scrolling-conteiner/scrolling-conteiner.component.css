@@ -68,7 +68,9 @@
   -webkit-user-select: none;
   background-color: rgba(34, 34, 34, 0.42);
   margin-left: 1%;
+  position: absolute;
 }
+/*  margin: 0px auto; выставляет блок по центру */
 
 /* Position the "next button" to the right */
 .next {
@@ -80,7 +82,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  
+
   background-color: rgba(0, 0, 0, 0.8);
 }
 
