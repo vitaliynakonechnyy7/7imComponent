@@ -73,7 +73,7 @@ ngOnInit(): void {
 
 }
 
-/* (function() {
+ /* (function() {
   function scrollHorizontally(e) {
       e = window.event || e;
       var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));

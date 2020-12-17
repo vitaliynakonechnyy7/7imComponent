@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderLightComponent implements OnInit {
   title = 'test';
+  date: Date = new Date()
   public isShown = true;
+  
   img = [
     {
       productId: 1,
@@ -85,12 +87,7 @@ export class SliderLightComponent implements OnInit {
       dots[slideIndex - 1].className += "active";
       captionText.innerHTML = dots[slideIndex - 1].alt;  */
     }
-  
-
 
   ngOnInit(): void {
   }
-
-
-
 }
