@@ -1,9 +1,10 @@
  <p>css-slider works!</p>
 
+ <!--  -->
  <input type="text" [(ngModel)]='title'>
  <p>{{title}}</p>
 
-<!--<div class="w3-container">
+ <div class="w3-container">
   <h2>Slideshow Indicators</h2>
   <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
 </div>
@@ -23,6 +24,38 @@
     <div class="w3-col s4">
       <img class="demo w3-opacity w3-hover-opacity-off" src="/assets/images/istock-isl.webp" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
     </div>
+  </div>
+</div>
+
+<!-- <div>
+  <div class="form-group">
+      <label>Название модели</label>
+      <input class="form-control" name="title"
+          [(ngModel)]="phone.title" #phoneTitle="ngModel" />
+  </div>
+  <div class="form-group">
+      <label>Цена</label>
+      <input type="number" class="form-control" name="price"
+          [(ngModel)]="phone.price" #phonePrice="ngModel" />
+  </div>
+  <div class="form-group">
+      <label>Производитель</label>
+      <select class="form-control" name="company"
+          [(ngModel)]="phone.company" #phoneCompany="ngModel">
+          <option  *ngFor="let comp of companies" [value]="comp">
+              {{comp}}
+          </option>
+      </select>
+  </div>
+  <div class="form-group">
+      <button class="btn btn-default" (click)="addPhone(phoneTitle, phonePrice, phoneCompany)">
+          Добавить
+      </button>
+  </div>
+  <div>
+      <p>{{phoneTitle.name}} : {{phoneTitle.model}}</p>
+      <p>{{phonePrice.name}} : {{phonePrice.model}}</p>
+      <p>{{phoneCompany.name}} : {{phoneCompany.model}}</p>
   </div>
 </div>
  -->

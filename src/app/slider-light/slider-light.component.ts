@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderLightComponent implements OnInit {
   title = 'test';
-  date: Date = new Date()
+  date: Date = new Date();
   public isShown = true;
   
   img = [

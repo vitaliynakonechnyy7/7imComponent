@@ -24,6 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { SliderJsComponent } from './slider-js/slider-js.component';
+import { TeslaCardComponent } from './tesla-card/tesla-card.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { SliderJsComponent } from './slider-js/slider-js.component';
     SliderLightComponent,
     ScrollingConteinerComponent,
     SliderJsComponent,
+    TeslaCardComponent,
 
   ],
   imports: [
