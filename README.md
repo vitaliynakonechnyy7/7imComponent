@@ -16,3 +16,4 @@ and in new window with message type:
 ng g c 'name' --skipTests команда создает компонент без юнит тестов
 
 
+ng serve --hmr без полного обновления страниц

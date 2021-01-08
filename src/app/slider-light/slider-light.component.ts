@@ -9,7 +9,7 @@ export class SliderLightComponent implements OnInit {
   title = 'test';
   date: Date = new Date();
   public isShown = true;
-  
+
   img = [
     {
       productId: 1,
