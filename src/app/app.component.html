@@ -1,18 +1,14 @@
-
-
 <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>My App</span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App </span>
 
 
-    <button mat-button color="primary"
-    (click)="backgroundToggle = !backgroundToggle"
-     style="float: right;">Изменить тему</button>
+  <button mat-button color="primary" (click)="backgroundToggle = !backgroundToggle" style ="">Изменить тему</button>
 
 
-   <!-- <mat-form-field appearance="fill">
+  <!-- <mat-form-field appearance="fill">
       <mat-label>Изменить тему</mat-label>
       <mat-select>
          <mat-option *ngFor="let theme of themes" [value]="theme.value">
@@ -21,15 +17,7 @@
       </mat-select>
     </mat-form-field>-->
 
-  </mat-toolbar>
-
-
-
-  <!-- Image text -->
-<div class="caption-container">
-  <p id="caption"></p>
-</div>
-
+</mat-toolbar>
 <!-- Thumbnail images -->
 <!-- <div class="row">
   <div class="column">
@@ -53,18 +41,73 @@
 </div>
 </div> -->
 
-
-<div style="text-align:center"
-[class.beazh-theme]= 'backgraundTheme'
-[class.img-theme]= '!backgraundTheme'
-[ngStyle]="{
+<!-- [class.beazh-theme]= 'backgraundTheme'
+[class.img-theme]= '!backgraundTheme'-->
+<div style="text-align:center" [ngStyle]="{
   background: backgroundToggle ? ' rgba(58, 57, 57, 0.899)' : ''
 }">
-<div class="w3-container w3-center w3-animate-top">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
+  <div class="w3-container w3-center w3-animate-top" style="opacity: 1;
+visibility: visible;">
+    <h1>
+      Welcome to {{message}}!
+    </h1>
+  </div>
+
+
+  <div class="view-option"><label for="filter-sort-by">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">Выбрать участника экспедиции</font>
+      </font>
+    </label>
+    <div class="tds-select">
+      <select class="tds-select-input" (input)='onInput($event)'>
+        <option value="Все колонисты">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Все колонисты</font>
+          </font>
+        </option>
+        <option value="Старший экипаж">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Старший экипаж</font>
+          </font>
+        </option>
+        <option value="Младший экипаж">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Младший экипаж</font>
+          </font>
+        </option>
+        <option value="Имеющие доступ к частям корабля">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Имеющие доступ к частям корабля</font>
+          </font>
+        </option>
+        <option value="Доступ на открытие шлюзов">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Доступ на открытие шлюзов</font>
+          </font>
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <p><strong>{{InputValue}}</strong></p>
+
+  <div style="display:flex; align-content: space-around;">
+
+    <mat-card *ngFor="let humans of human; let idx = index" style="width: 250px; height: 350px; margin-right: 5px;">
+      {{idx +1}}
+      <h3>участник экспедиции:{{humans .name}} </h3>
+      <h3>возраст: {{humans .vozrast}}</h3>
+      <h3>вес:{{humans .ves}}</h3>
+      <h3>рост:{{humans .rost}}</h3>
+      <a style="height: 50px; width: 50px;">[img]='{{humans .imageUrl}}'</a>
+    </mat-card>
+ <!--    <div  *ngFor='let newName of humans .lastName'>
+      <li>{{newName .familia}}</li>
+    </div>-->
+
+  </div>
+
   <app-tesla-card></app-tesla-card>
 
 
@@ -78,7 +121,7 @@
   <app-card-product></app-card-product>
   <app-tilt-hover-effect3d></app-tilt-hover-effect3d>
   <app-blog></app-blog>
-<!--
+  <!--
 -->
 </div>
 

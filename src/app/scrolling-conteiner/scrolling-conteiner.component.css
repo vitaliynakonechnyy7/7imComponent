@@ -4,14 +4,14 @@
   display: flex;
 }
 
-.conteiner {
+/* .conteiner {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
 .conteiner::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .container img {
   height: 300px;

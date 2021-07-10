@@ -3,3 +3,10 @@ html, body { height: 100%; width: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+.tds-select-input {
+  border-radius: 25px;
+  height: 40px;
+  width: 300px;
+  background: #f4f4f4;
+  padding: 7px;
+}
