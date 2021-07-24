@@ -84,17 +84,17 @@ export class AppComponent {
 
 msgHallow(ev)
 {console.log('message');
-  alert(this.message) }
+ alert(this.message); }
 
   onInput(event?: any ) {
-    console.log('Event', event)
-    this.InputValue = event.target.value
+    console.log('Event', event);
+    this.InputValue = event.target.value;
   }
 
   constructor() {
    setTimeout(() => {
-      console.log('3 sec end')
-      this.message = 'Поросячий мир'
+      console.log('3 sec end');
+      this.message = 'Поросячий мир';
     }, 3000);
   }
 
