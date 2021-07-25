@@ -17,8 +17,6 @@ export class AppComponent {
   InputValue = '';
 
 
-
-
   human = [
     {
       name: 'Vt',
@@ -84,27 +82,20 @@ export class AppComponent {
 
 msgHallow(ev)
 {console.log('message');
-  alert(this.message) }
+ alert(this.message); }
 
   onInput(event?: any ) {
-    console.log('Event', event)
-    this.InputValue = event.target.value
+    console.log('Event', event);
+    this.InputValue = event.target.value;
   }
 
   constructor() {
    setTimeout(() => {
-      console.log('3 sec end')
-      this.message = 'Поросячий мир'
+      console.log('3 sec end');
+      this.message = 'Прощяй мир';
     }, 3000);
   }
 
-  // tslint:disable-next-line: member-ordering
-
-
-
-
-  // tslint:disable-next-line: align
-  //
   /* themes: NewType[] = [
     {value: 'backgroundToggle', viewValue: 'Темная'},
     {value: 'backgraundTheme', viewValue: 'Светлая'},

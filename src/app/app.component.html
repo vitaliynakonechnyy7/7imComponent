@@ -4,20 +4,14 @@
   </button>
   <span>My App </span>
 
-
-  <button mat-button color="primary" (click)="backgroundToggle = !backgroundToggle" style ="">Изменить тему</button>
-
-
-  <!-- <mat-form-field appearance="fill">
-      <mat-label>Изменить тему</mat-label>
-      <mat-select>
-         <mat-option *ngFor="let theme of themes" [value]="theme.value">
-          {{theme.viewValue}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>-->
+  <button mat-button color="primary" (click)="backgroundToggle = !backgroundToggle">Изменить тему</button> 
 
 </mat-toolbar>
+
+<div class="result" style="margin-bottom: 50px;">
+  <h1 id="result"></h1>
+</div>
+
 <!-- Thumbnail images -->
 <!-- <div class="row">
   <div class="column">
@@ -103,7 +97,7 @@ visibility: visible;">
       <a style="height: 50px; width: 50px;">[img]='{{humans .imageUrl}}'</a>
     </mat-card>
  <!--    <div  *ngFor='let newName of humans .lastName'>
-      <li>{{newName .familia}}</li>
+      <li>{{newName.familia}}</li>
     </div>-->
 
   </div>
