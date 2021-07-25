@@ -17,8 +17,6 @@ export class AppComponent {
   InputValue = '';
 
 
-
-
   human = [
     {
       name: 'Vt',
@@ -94,17 +92,10 @@ msgHallow(ev)
   constructor() {
    setTimeout(() => {
       console.log('3 sec end');
-      this.message = 'Поросячий мир';
+      this.message = 'Прощяй мир';
     }, 3000);
   }
 
-  // tslint:disable-next-line: member-ordering
-
-
-
-
-  // tslint:disable-next-line: align
-  //
   /* themes: NewType[] = [
     {value: 'backgroundToggle', viewValue: 'Темная'},
     {value: 'backgraundTheme', viewValue: 'Светлая'},
